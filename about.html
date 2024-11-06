@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wave To Earth</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.png">
+</head>
+<body>
+    <header>
+        <img src="./images/w2e logo white.png" alt="logo">
+        <div class="header-right">
+            <a href="./index.html">Home</a>
+            <a href="https://www.teezily.com/stores/wave-to-earth-merch-00">Store</a>
+            <a href="./about.html">About</a>
+            <a href="./music.html">Music</a>
+            <a href="./contact.html">Contact Us</a>
+        </div>
+          
+            <div id="mySidenav"  class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="./index.html">Home</a>
+                <a href="https://www.teezily.com/stores/wave-to-earth-merch-00">Store</a>
+                <a href="./about.html">About</a>
+                <a href="./music.html">Music</a>
+                <a href="./contact.html">Contact Us</a>
+              </div>
+              <span style="font-size:30px;cursor:pointer;color: white;" onclick="openNav()">&#9776;</span>
+
+
+        
+    </header>
+    <main>
+        <div class="element-animation">
+        <div class="history">
+            <h2>HISTORY</h2>
+            <img src="./images/members.png" alt="">
+            <p>Wave to Earth was formed when Kim Daniel and Shin Dongkyu were in middle school. They said they formed a band with the ambition of
+            "showing music that makes a new wave." They debuted with the single "wave" on 23 August 2019 with a new member Cha Soonjong. While the three of them are the official members, the session members also include Jo Jung-geun (keyboard) Jeon-min (saxophone), and Hong Seung-gi, an artwork member.</p>
+            
+        </div>
+        </div>
+        <div class="element-animation">
+        <div class="members">
+            <h2>MEMBERS</h2>
+            <div class="carousel">
+
+                <div class="element">
+                    <img src="./images/Daniel Kim.webp" alt="daniel" class="daniel">
+                    <div class="name">
+                        <div class="text">
+                    <h3>DANIEL KIM</h3>
+                    <p>vocals, guitar</p>
+                    <p>1997 March 18 (27 years old)</p>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="element">
+                    <img src="./images/Cha Sunjong.webp" alt="sunjong" class="sunjong">
+                    <div class="name">
+                        <div class="text">
+                    <h3>CHA SUNJONG</h3>
+                    <p>Base</p>
+                    <p>1997 August 13 ( 27 years old)</p>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="element">
+                    <img src="./images/Dongkyu Shin.webp" alt="dongkyu" class="dongkyu">
+                    <div class="name">
+                        <div class="text">
+                    <h3>DONGKYU SHIN</h3>
+                    <p>drum</p>
+                    <p>1998 January 23 ( 26 years old)</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-left">
+        <div class="contact">
+            <h3>Contact</h3>
+            <p><img src="./images/icons/email.png" alt="email"> CONTACT@WAVETOTHEEARTH.COM</p>
+            <p><img src="./images/icons/call.png" alt="call">+1 (555) 123-4567</p>
+        </div>
+        <div class="links">
+            <h3>Useful Links</h3>
+            <a href="./index.html"><p>Home</p></a>
+            <a href="https://www.teezily.com/stores/wave-to-earth-merch-00"><p>Store</p></a>
+            <a href="./about.html"><p>About</p></a>
+            <a href="./music.html"><p>Music</p></a>
+            <a href="./contact.html"><p>Contact Us</p></a>
+        </div>
+        <div class="social-media">
+            <h3>Social Media</h3>
+            <div class="icons">
+            <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.instagram.com/wave_to_earth/&ved=2ahUKEwiXvLaercCJAxVDKRAIHZzGFqcQFnoECFQQAQ&usg=AOvVaw1exrC16d2yMeHItXYHLrTc"><img src="./images/icons/instagram-3.png" alt="insta"></a>
+            <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://twitter.com/wave_to_earth%3Fref_src%3Dtwsrc%255Egoogle%257Ctwcamp%255Eserp%257Ctwgr%255Eauthor&ved=2ahUKEwiXvLaercCJAxVDKRAIHZzGFqcQ6F56BQiDARAB&usg=AOvVaw2pEziLRTKigN8zdJYo9P3e"><img src="./images/icons/twitter-2.png" alt="twitter"></a>
+            <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.youtube.com/channel/UCBJNpcJaUcVyw4LlqGRMpcQ&ved=2ahUKEwiXvLaercCJAxVDKRAIHZzGFqcQFnoECFMQAQ&usg=AOvVaw3CJNn3O3e4KjyZV0zfTVSd"><img style="width: 37px;" src="./images/icons/youtube-2.png" alt="youtube"></a>
+        </div>
+        </div>
+    </div>
+    </footer>
+
+
+    
+    <script>
+
+        function onEntry(entry) {
+          entry.forEach(change => {
+            if (change.isIntersecting) {
+             change.target.classList.add('element-show');
+            }
+          });
+        }
+        
+        let options = {
+          threshold: [0.5] };
+        let observer = new IntersectionObserver(onEntry, options);
+        let elements = document.querySelectorAll('.element-animation');
+        
+        for (let elm of elements) {
+          observer.observe(elm);
+        }
+        
+            </script>
+
+
+
+<!-- for mobile version -->
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+
+
+
+    
+</body>
+</html>

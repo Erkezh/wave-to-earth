@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wave To Earth</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.png">
+</head>
+<body>
+    <header>
+        <img src="./images/w2e logo white.png" alt="logo">
+        <div class="header-right">
+            <a href="./index.html">Home</a>
+            <a href="https://www.teezily.com/stores/wave-to-earth-merch-00">Store</a>
+            <a href="./about.html">About</a>
+            <a href="./music.html">Music</a>
+            <a href="./contact.html">Contact Us</a>
+        </div>
+
+        <div id="mySidenav"  class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="./index.html">Home</a>
+            <a href="https://www.teezily.com/stores/wave-to-earth-merch-00">Store</a>
+            <a href="./about.html">About</a>
+            <a href="./music.html">Music</a>
+            <a href="./contact.html">Contact Us</a>
+          </div>
+          <span style="font-size:30px;cursor:pointer;color: white;" onclick="openNav()">&#9776;</span>
+
+    </header>
+
+    <main>
+        <form action="https://formspree.io/f/xldebrwl" method="POST">
+            <h1>Let's Connect</h1>
+            <p>We'd love to hear from you! Use the form below or reach out through social media.</p>
+            <input type="text" name="name" placeholder="Your name..." required>
+            <input type="email" name="email" placeholder="Your email..." required>
+            <input class="message" type="text" name="message" placeholder="Your message..." required>
+            <button type="submit" >Send Message</button>
+        </form>
+
+    </main>
+
+    <footer>
+        <div class="footer-left">
+        <div class="contact">
+            <h3>Contact</h3>
+            <p><img src="./images/icons/email.png" alt="email"> CONTACT@WAVETOTHEEARTH.COM</p>
+            <p><img src="./images/icons/call.png" alt="call">+1 (555) 123-4567</p>
+        </div>
+        <div class="links">
+            <h3>Useful Links</h3>
+            <a href="./index.html"><p>Home</p></a>
+            <a href="https://www.teezily.com/stores/wave-to-earth-merch-00"><p>Store</p></a>
+            <a href="./about.html"><p>About</p></a>
+            <a href="./music.html"><p>Music</p></a>
+            <a href="./contact.html"><p>Contact Us</p></a>
+        </div>
+        <div class="social-media">
+            <h3>Social Media</h3>
+            <div class="icons">
+            <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.instagram.com/wave_to_earth/&ved=2ahUKEwiXvLaercCJAxVDKRAIHZzGFqcQFnoECFQQAQ&usg=AOvVaw1exrC16d2yMeHItXYHLrTc"><img src="./images/icons/instagram-3.png" alt="insta"></a>
+            <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://twitter.com/wave_to_earth%3Fref_src%3Dtwsrc%255Egoogle%257Ctwcamp%255Eserp%257Ctwgr%255Eauthor&ved=2ahUKEwiXvLaercCJAxVDKRAIHZzGFqcQ6F56BQiDARAB&usg=AOvVaw2pEziLRTKigN8zdJYo9P3e"><img src="./images/icons/twitter-2.png" alt="twitter"></a>
+            <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.youtube.com/channel/UCBJNpcJaUcVyw4LlqGRMpcQ&ved=2ahUKEwiXvLaercCJAxVDKRAIHZzGFqcQFnoECFMQAQ&usg=AOvVaw3CJNn3O3e4KjyZV0zfTVSd"><img style="width: 37px;" src="./images/icons/youtube-2.png" alt="youtube"></a>
+        </div>
+        </div>
+    </div>
+    </footer>
+
+
+    <!-- for mobile version -->
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+
+</body>
+</html>

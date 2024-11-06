@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.png">
+    <title>Wave to Earth</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+        <img src="./images/w2e logo white.png" alt="logo">
+        <div class="header-right">
+            <a href="./index.html">Home</a>
+            <a href="https://www.teezily.com/stores/wave-to-earth-merch-00">Store</a>
+            <a href="./about.html">About</a>
+            <a href="./music.html">Music</a>
+            <a href="./contact.html">Contact Us</a>
+        </div>
+
+        <div id="mySidenav"  class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="./index.html">Home</a>
+            <a href="https://www.teezily.com/stores/wave-to-earth-merch-00">Store</a>
+            <a href="./about.html">About</a>
+            <a href="./music.html">Music</a>
+            <a href="./contact.html">Contact Us</a>
+          </div>
+          <span style="font-size:30px;cursor:pointer;color: white;" onclick="openNav()">&#9776;</span>
+    </header>
+    <main>
+        
+        <div class="top">
+            <div class="element-animation">
+            <h1>WAVE TO EARTH</h1>
+            <h2>Wave To Us</h2>
+            <h3>Your journey through deep emotions and sound waves begins here.</h3>
+        </div>
+    </div>
+    <div class="element-animation">
+        <div class="popular">
+            <h2>POPULAR SONGS</h2>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/5069JTmv5ZDyPeZaCCXiCg?utm_source=generator&theme=0" width="100%" height="550px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <a href="./music.html"><button>Full Discography</button></a>
+        </div>
+    </div>
+    <div class="element-animation">
+        <div class="values">
+            <h2>OUR VALUES</h2>
+            <p>At Wave to Earth, we believe in the power of music to bring people together. We are committed to spreading positivity, unity, and inspiration through our art. Our songs are a reflection of our values: love for nature, respect for diversity, ano the pursuit of dreams. We invite you to be part of our
+            community and help us make a difference through music.</p>
+        </div>
+        </div>
+    </main>
+        <footer>
+            <div class="footer-left">
+            <div class="contact">
+                <h3>Contact</h3>
+                <p><img src="./images/icons/email.png" alt="email"> CONTACT@WAVETOTHEEARTH.COM</p>
+                <p><img src="./images/icons/call.png" alt="call">+1 (555) 123-4567</p>
+            </div>
+            <div class="links">
+                <h3>Useful Links</h3>
+                <a href="./index.html"><p>Home</p></a>
+                <a href="https://www.teezily.com/stores/wave-to-earth-merch-00"><p>Store</p></a>
+                <a href="./about.html"><p>About</p></a>
+                <a href="./music.html"><p>Music</p></a>
+                <a href="./contact.html"><p>Contact Us</p></a>
+            </div>
+            <div class="social-media">
+                <h3>Social Media</h3>
+                <div class="icons">
+                <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.instagram.com/wave_to_earth/&ved=2ahUKEwiXvLaercCJAxVDKRAIHZzGFqcQFnoECFQQAQ&usg=AOvVaw1exrC16d2yMeHItXYHLrTc"><img src="./images/icons/instagram-3.png" alt="insta"></a>
+                <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://twitter.com/wave_to_earth%3Fref_src%3Dtwsrc%255Egoogle%257Ctwcamp%255Eserp%257Ctwgr%255Eauthor&ved=2ahUKEwiXvLaercCJAxVDKRAIHZzGFqcQ6F56BQiDARAB&usg=AOvVaw2pEziLRTKigN8zdJYo9P3e"><img src="./images/icons/twitter-2.png" alt="twitter"></a>
+                <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.youtube.com/channel/UCBJNpcJaUcVyw4LlqGRMpcQ&ved=2ahUKEwiXvLaercCJAxVDKRAIHZzGFqcQFnoECFMQAQ&usg=AOvVaw3CJNn3O3e4KjyZV0zfTVSd"><img style="width: 37px;" src="./images/icons/youtube-2.png" alt="youtube"></a>
+            </div>
+            </div>
+        </div>
+        </footer>хээ
+
+        <script>
+
+            function onEntry(entry) {
+              entry.forEach(change => {
+                if (change.isIntersecting) {
+                 change.target.classList.add('element-show');
+                }
+              });
+            }
+            
+            let options = {
+              threshold: [0.5] };
+            let observer = new IntersectionObserver(onEntry, options);
+            let elements = document.querySelectorAll('.element-animation');
+            
+            for (let elm of elements) {
+              observer.observe(elm);
+            }
+            
+                </script>
+
+
+<!-- for mobile version -->
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+
+</body>
+</html>
